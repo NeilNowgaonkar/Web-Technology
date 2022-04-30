@@ -1,0 +1,109 @@
+.main
+{
+    background-color: #03045e;
+    padding: 10px;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+#Heading
+{
+
+    background-color: #03045e;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+#myVideo 
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+a:link
+{
+    color: white;
+}
+
+a:visited
+{
+    color: white;
+}
+
+#profile_pic
+{
+    border-radius: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+
+}
+
+#basic-info
+{
+    padding-left: 10%;
+    padding-right: 5px;
+    color: white;
+    background-color: #03045e;
+    height: 100%;
+}
+
+.rows
+{
+    width: 100%;
+    display: flex;
+    background-color: darkgray;
+    padding: 10px;  
+}
+
+.column 
+{
+    flex: 1;
+    column-rule: #03045e;
+    column-rule-width: 20px;
+    background-color: #ebebeb;
+    height: 92hv;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-headings
+{
+    padding-left: 20px;
+    font-size: 20px;
+    color: #03045e;
+    text-decoration: underline;
+}
+
+
+.details
+{
+    font-size: 20px;
+}
+
+.tab
+{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    .column
+    {
+        align-items: center;
+
+    }
+    .rows
+    {
+        flex-direction: column;
+    }
+  }
+  

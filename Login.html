@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+
+    <script>
+        function validateForm()
+        {
+            let usrname=document.forms["loginForm"]["usrname"].value;
+            let pwd=document.forms["loginForm"]["pwd"].value;
+
+            if(usrname == "8208301400" && pwd == "Neil@26082001")
+            {
+                location.href = "Lab2.html";
+            }
+            else
+            {
+                alert("Invalid Login")
+            }
+        }
+
+       
+    </script>
+
+</head>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="Bg_vdo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+
+    <div class="content">
+        <h1 style="text-align: center; font-size: 40px;">Login Form</h1>
+
+
+        <img src="login.jpg" class="center" alt="Login Avaar" height="200px">
+        <br><br><br>
+
+
+        <table  class="table" cellspacing="7px" cellpadding="5px" >
+            <form name="loginForm" onsubmit="validateForm()">
+                <tr>
+                    <td>
+                        <label for="usrname">Username</label>
+        
+                    </td>
+        
+                    <td>
+                            <input type="text" id="usrname" pattern="[0-9].{10,10}$" title="Mobile Number must be of ten digits" name="usrnname" style="width: 200px ;line-height: 30px; font-size: 20px;" required/>    
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <br>
+                        <label for="pwd">Password</label>
+        
+                    </td>
+        
+                    <td>
+                        <br>
+                        <input type="password" id="pwd" name="pwd" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[!,@,#,$,%,^,&,*,(,)])(?=.*[A-Z]).{11,}"
+                        title="Must contain at least one  Uppercase and one digit and one special letter, and at least 11 or more characters"
+                        style="width: 200px ;line-height: 30px;">
+        
+                    </td>
+    
+
+                </tr>
+
+                <tr></tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button class="button" type="submit" onclick="validateForm()"><b>Submit</b></Button>
+                    </td>
+                </tr>
+                
+            </form>
+
+            
+    </div>
+    </body>
+    </table>
+
+</html>

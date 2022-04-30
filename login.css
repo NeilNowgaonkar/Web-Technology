@@ -1,0 +1,60 @@
+.imgcontainer
+{
+    padding-top:0px;
+    align-items: center;
+}
+.button
+{
+    cursor: pointer;
+    text-align: center;
+    background-color: aqua;
+    padding: 15px;
+    font-size: 16px;
+    color: black;
+    
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+.content {
+    position: fixed;
+    top: 0px;
+    left: 30%;
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(155, 241, 237);
+    padding: 200px;
+
+  }
+
+  .table
+  {
+      
+      text-align: center;
+      font-size: 30px;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    .column
+    {
+        align-items: center;
+
+    }
+    .rows
+    {
+        flex-direction: column;
+    }
+  }
+  
