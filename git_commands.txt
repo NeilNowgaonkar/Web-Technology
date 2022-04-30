@@ -1,0 +1,7 @@
+git add "file name"
+git add .
+git status 
+git log
+git branch branchname
+git checkout branchname
+git checkout -b branchname
